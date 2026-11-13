@@ -1,0 +1,23 @@
+{
+  "version": "0.9.0",
+  "description": "Offline geocoder: addresses to coordinates from a country sheet",
+  "homepage": "https://gridpin.dev",
+  "license": "Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/gridpin/gridpin/releases/download/v0.9.0/gridpin-x86_64-pc-windows-msvc.zip",
+      "hash": "1c4170f593df992bc6f7f076fb7e23f00519b6531be15bf8a6a56c3948752b99"
+    }
+  },
+  "bin": "gridpin.exe",
+  "checkver": {
+    "github": "https://github.com/gridpin/gridpin"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/gridpin/gridpin/releases/download/v$version/gridpin-x86_64-pc-windows-msvc.zip"
+      }
+    }
+  }
+}
